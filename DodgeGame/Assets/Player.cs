@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     public float speed;
     private Rigidbody playerRigidbody;
 
+    public bool shield = false; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +67,16 @@ public class Player : MonoBehaviour
         if(Input.GetKey(KeyCode.Space))
         {
             Die();
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "SHIELDITEM")
+        {
+            Destroy(other.gameObject);
+
+            shield = true;
         }
     }
 

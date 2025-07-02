@@ -357,6 +357,7 @@
 "Assets/EnemyMove1.cs"
 "Assets/GameManager.cs"
 "Assets/Player.cs"
+"Assets/ShieldSpawner.cs"
 "Assets/Spawner.cs"
 "Assets/Title.cs"
 -langversion:9.0

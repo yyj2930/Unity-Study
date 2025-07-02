@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - ANCHOR
+  - ENEMY1
+  - ENEMY2
+  - SHIELDITEM
   layers:
   - Default
   - TransparentFX

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7788430741152418991}
   - component: {fileID: 7446493918706598785}
   - component: {fileID: -4984349158417196537}
+  - component: {fileID: -4273373321829642508}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -151,3 +152,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!114 &-4273373321829642508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8853763333216161780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c812f9427731f438da9e5ffd026356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 7

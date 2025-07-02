@@ -25,8 +25,17 @@ public class Bullet : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            other.GetComponent<Player>().Die();
-            Destroy(gameObject);
+            if(other.GetComponent<Player>().shield == true)
+            {
+                Destroy(gameObject);
+                other.GetComponent<Player>().shield = false;
+            }
+            else
+            {
+                other.GetComponent<Player>().Die();
+                Destroy(gameObject);
+            }
+                
         }
     }
 }
